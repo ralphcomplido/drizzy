@@ -22,7 +22,7 @@
 }
 
 .search {
-	margin: -20px 10px 80px 10px;
+	margin: 70px 10px 80px 10px;
 	text-align: center;
 	align-content: center;
 
@@ -35,6 +35,15 @@
 	width: 25%;
 }
 
+body{
+	/*example
+	background-image: url("../images/background1.jpg"); */
+	background-position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
 
 h1{
 	font-size: 600%;
@@ -43,7 +52,7 @@ h1{
 }
 
 h4 {
-	font-size:  10px;
+	font-size:  15px;
 	font-style: italic;
 	text-align: center;
 }
@@ -59,5 +68,6 @@ h5 {
 #head{
 	background-color: white !important;
 	margin-top: -10px;
+	padding: 5px;
 
 }
