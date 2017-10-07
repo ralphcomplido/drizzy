@@ -20,10 +20,44 @@
        console.log(queryURL);
 
        console.log(response);
+        
 
-        console.log("Wind Speed: " + response.wind.speed);
-        console.log("Humidity: " + response.main.humidity);
-        console.log("Temperature (F): " + response.main.temp);
+     function appendToWeatherBox() {
+      var hotDiv = $("<div>").addClass("hot");
+      var sunSpan = $("<span>").addClass("sun");
+      var sunxSpan = $("<span>").addClass("sunx");
+      var weatherAreaDiv = $("<div>").addClass("weather-area");
+      var appendAll = hotDiv.append(sunSpan, sunxSpan, weatherAreaDiv);
+      $(".weather-box").append(appendAll);
+
+     }
+    
+       
+       function createWeatherArea() {
+        var weatherDetails = ["city", "icon", "temp"];
+        for (var i = 0; i < weatherDetails.length; i++) {
+          var div = $("<div>");
+          div.addClass("weather-details");
+          div.attr('id', weatherDetails[i]);
+          $(".weather-area").append(div);
+          
+        }
+
+}
+ 
+        function showWeather(){
+        var cityName = response.name;
+        var iconUrl = "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
+        var weatherIcon = $("<img>").attr("src", iconUrl).attr("width", "auto").attr("height", "150px");
+        var tempValue = response.main.temp +"&#730F"
+        var temp = $("<p>").html("Temperature: " + tempValue);
+        $("#city").append(cityName);
+      $("#icon").append(weatherIcon);
+      $("#temp").append(temp);
+}
+appendToWeatherBox();
+createWeatherArea();
+showWeather();
 
         
       });
