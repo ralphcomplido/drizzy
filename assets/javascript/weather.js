@@ -1,5 +1,6 @@
 // I need Zip Code Input Submit ID
 //#submit and #zip
+var weather = 0;
 
  $("#submit").on("click", function(event) {
         event.preventDefault();
@@ -20,7 +21,19 @@
        console.log(queryURL);
 
        console.log(response);
-        
+    function weatherChecker() {
+      let temp = response.main.temp;
+      if (temp > 70 && temp < 90) { 
+        weather = "hot";
+        console.log(weather);
+        chooseSong();
+    }
+      else if (temp > 46 && temp < 69) { 
+        weather = "cold";
+        console.log(weather);
+        chooseSong();
+      } 
+    };
 
      function appendToWeatherBox() {
       var hotDiv = $("<div>").addClass("hot");
@@ -58,6 +71,7 @@
 appendToWeatherBox();
 createWeatherArea();
 showWeather();
+weatherChecker();
 
         
       });

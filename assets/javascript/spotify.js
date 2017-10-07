@@ -1,3 +1,5 @@
+
+
 var songs = { 
 	
 
@@ -32,8 +34,22 @@ var songs = {
 	}
 }
 
+function chooseSong() {
+
+	if (songs.childsPlay.weather === weather) {
 console.log(songs.childsPlay.id);
-var songSrc = "https://open.spotify.com/embed?uri=spotify:track:" + songs.preach.id;
+var songSrc = "https://open.spotify.com/embed?uri=spotify:track:" + songs.childsPlay.id;
  var iframe = $("<iframe>").attr("src", songSrc).attr("width", "460").attr("height", "200")
  				.attr("frameborder", "0").attr("allowtransparency", "true");
  $(".spotify-box").append(iframe);
+} else if (songs.oneDance.weather === weather) {
+	console.log(songs.oneDance.id);
+var songSrc = "https://open.spotify.com/embed?uri=spotify:track:" + songs.oneDance.id;
+ var iframe = $("<iframe>").attr("src", songSrc).attr("width", "460").attr("height", "200")
+ 				.attr("frameborder", "0").attr("allowtransparency", "true");
+ $(".spotify-box").append(iframe);
+ } else {
+ 	console.log("error on song")
+ }
+}
+
