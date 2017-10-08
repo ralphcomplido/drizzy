@@ -3,7 +3,9 @@
 var weather = 0;
 
  $("#submit").on("click", function(event) {
+        
         event.preventDefault();
+        
         var zip = $("#zip").val().trim();
         console.log(zip)
         
@@ -23,12 +25,12 @@ var weather = 0;
        console.log(response);
     function weatherChecker() {
       let temp = response.main.temp;
-      if (temp > 70 && temp < 90) { 
+      if (temp > 80 && temp < 120) { 
         weather = "hot";
         console.log(weather);
         chooseSong();
     }
-      else if (temp > 46 && temp < 69) { 
+      else if (temp > 46 && temp < 79) { 
         weather = "cold";
         console.log(weather);
         chooseSong();
@@ -47,6 +49,8 @@ var weather = 0;
     
        
        function createWeatherArea() {
+
+        $(".weather-area").empty();
         var weatherDetails = ["city", "icon", "temp"];
         for (var i = 0; i < weatherDetails.length; i++) {
           var div = $("<div>");

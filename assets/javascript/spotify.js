@@ -35,7 +35,7 @@ var songs = {
 }
 
 function chooseSong() {
-
+	$(".spotify-box").empty();
 	if (songs.childsPlay.weather === weather) {
 console.log(songs.childsPlay.id);
 var songSrc = "https://open.spotify.com/embed?uri=spotify:track:" + songs.childsPlay.id;
