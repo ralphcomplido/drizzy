@@ -25,12 +25,14 @@ var weather = 0;
        console.log(response);
     function weatherChecker() {
       let temp = response.main.temp;
-      if (temp > 80 && temp < 120) { 
+      if (temp > 75 && temp < 120) { 
+      $("body").css("background-image", "url('assets/images/sunny.jpg')");  
         weather = "hot";
         console.log(weather);
         chooseSong();
     }
-      else if (temp > 46 && temp < 79) { 
+      else if (temp > 30 && temp < 75) { 
+        $("body").css("background-image", "url('assets/images/cold.jpg')");  
         weather = "cold";
         console.log(weather);
         chooseSong();
