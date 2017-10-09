@@ -1,0 +1,69 @@
+.search {
+	margin: 70px 10px 80px 10px;
+	text-align: center;
+	align-content: center;
+	background-color: black;
+
+} 
+
+.weather-box{
+	position: relative;
+	bottom: 100px;
+	right: 39px;
+	margin-top: 50px;
+	margin-left: 50px;
+	height: 380px;
+	width: 380px;
+	border-radius: 20px;
+}
+
+.spotify-box {
+	position: relative;
+	top: 65px;
+	left: 39px;
+
+}
+
+body{
+	background-image: url("../images/background1.jpg");
+	/*background-repeat: no-repeat;*/
+	/*background: url(http://jamesturrell.com/wp-content/uploads/2015/11/CCC_Penumbra1-1440x1111.jpg); */
+	background-size: cover;
+
+}
+
+
+h1{
+	font-size: 600%;
+	text-align: center;
+	font-family: Lobster, Monospace; 
+}
+
+h4 {
+	font-size:  15px;
+	font-style: italic;
+	text-align: center;
+}
+
+h5 {
+	margin-top: -20px;
+	margin-bottom: -50px;
+	font-size: 120%;
+	font-family: Lobster, Monospace;
+}
+
+
+#head{
+	background-color: none;
+	margin-top: -10px;
+	padding: 5px;
+
+}
+
+#zip {
+	border-radius: 25px;
+	border: 2px solid DodgerBlue;
+	background: white;
+	color: white;
+
+	}

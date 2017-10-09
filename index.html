@@ -28,45 +28,38 @@
 
 <body>
 
-	<div class="container" id="main-container">
-    <div class="jumbotron" id="head">
-        <h1><img height="160" width="100" src="assets/images/drake.png" class="drake">Drizzy.</h1>
-          
-        <div class="box"> <h5>hello. welcome to drizzy.</h5></div>
-        
+	<div class="container">
+      <div id="head">
+            <h1><img height="160" width="100" src="assets/images/drake.png" class="drake">Welcome to Drizzy</h1>
       </div>
+  <!--Search box display-->
+    <div class="container-fluid search">
+      <form action="/submit-zip-code">
+        <input type="text" placeholder="enter your zip code" id="zip" required>
+          <button type="submit" class="btn btn-primary" id="submit"><i class="fa fa-map-marker"> </i></button>
+      </form>
     </div>
-
-<div class="container-fluid search">
-  <form action="/submit-zip-code">
-    <input type="text" placeholder="enter your zip code" id="zip" required>
-      <button type="submit" class="btn btn-primary" id="submit"><i class="fa fa-map-marker"> </i></button>
-  </form>
-
-
-   	</div>
-   </div>
-<!--Weather display-->
-  <div class="row">
-    <div class="col-md-6">
-      <div class="weather-box"> 
-        
-      </div>
-    </div>  
-<!--Spotify display-->
-    <div class="col-md-6">
-      <div class="spotify-box"> 
-        
-      </div>
-    </div>  
-  </div>  
-<!--copyright for drizzy-->
-<footer>
-      <div id="footer" class="container">
-            <h4 id="copyright">&copy; Copyright 2017 drizzy and friends</h4>
-      </div>    
-</footer>
-
+    <!--Weather display-->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="weather-box"> 
+            
+          </div>
+        </div>  
+    <!--Spotify display-->
+        <div class="col-md-6">
+          <div class="spotify-box"> 
+            
+          </div>
+        </div>  
+      </div>  
+  <!--copyright for drizzy-->
+  <!--<footer>
+        <div id="footer" class="container">
+              <h4 id="copyright">&copy; Copyright 2017 drizzy and friends</h4>
+        </div>    
+  </footer>-->
+  </div>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src="assets/javascript/weather.js"></script>

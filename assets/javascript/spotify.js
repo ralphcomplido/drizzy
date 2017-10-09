@@ -39,13 +39,13 @@ function chooseSong() {
 	if (songs.childsPlay.weather === weather) {
 console.log(songs.childsPlay.id);
 var songSrc = "https://open.spotify.com/embed?uri=spotify:track:" + songs.childsPlay.id;
- var iframe = $("<iframe>").attr("src", songSrc).attr("width", "460").attr("height", "200")
+ var iframe = $("<iframe>").attr("src", songSrc).attr("width", "380").attr("height", "380")
  				.attr("frameborder", "0").attr("allowtransparency", "true");
  $(".spotify-box").append(iframe);
 } else if (songs.oneDance.weather === weather) {
 	console.log(songs.oneDance.id);
 var songSrc = "https://open.spotify.com/embed?uri=spotify:track:" + songs.oneDance.id;
- var iframe = $("<iframe>").attr("src", songSrc).attr("width", "460").attr("height", "200")
+ var iframe = $("<iframe>").attr("src", songSrc).attr("width", "380").attr("height", "380")
  				.attr("frameborder", "0").attr("allowtransparency", "true");
  $(".spotify-box").append(iframe);
  } else {
