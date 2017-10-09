@@ -14,12 +14,12 @@ var songs = [
 	{ 
 		title: "Western Road Flows",
 		id: "4PA16FAl8LPmFmOhARawdV",
-		weather: "cold"
+		weather: "cozy"
 	},
 	{ 
 		title: "Cameras/Good Ones Go",
 		id: "03TsSYvCy8hxdThRdiCP74",
-		weather:"hot"
+		weather:"warm"
 	},
 	{ 
 		title: "Keep Family Close",
@@ -34,12 +34,12 @@ var songs = [
 	{ 
 		title: "U With Me",
 		id: "03L2AoiRbWhvt7BDMx1jUB",
-		weather:"cold"
+		weather:"cozy"
 	},
 	{ 
 		title: "Feel No Ways",
 		id: "3cjF2OFRmip8spwZYQRKxP",
-		weather:"cold"
+		weather:"warm"
 	},
 	{ 
 		title: "Hype",
@@ -54,12 +54,12 @@ var songs = [
 	{ 
 		title: "Redemption",
 		id: "4cRBqWBjuccCowYVHFlXK6",
-		weather:"hot"
+		weather:"cozy"
 	},
 	{ 
 		title: "With You",
 		id: "3aJkV6DUTSCqOwVwaBDG9B",
-		weather:"cold"
+		weather:"warm"
 	},
 	{ 
 		title: "Faithful",
@@ -74,12 +74,12 @@ var songs = [
 	{ 
 		title: "Controlla",
 		id: "3O8NlPh2LByMU9lSRSHedm",
-		weather:"hot"
+		weather:"cozy"
 	},
 	{ 
 		title: "Grammys",
 		id: "3O8NlPh2LByMU9lSRSHedm",
-		weather:"cold"
+		weather:"warm"
 	},
 	{ 
 		title: "Pop Style",
@@ -94,12 +94,12 @@ var songs = [
 	{ 
 		title: "Summers Over Interlude",
 		id: "3ppVO2tyWRRznNmONvt7Se",
-		weather:"hot"
+		weather:"cozy"
 	},
 	{ 
 		title: "Fire & Desire",
 		id: "4BhGTc3Cgay2U1QcTS7vQe",
-		weather:"cold"
+		weather:"warm"
 	},
 	{ 
 		title: "Views",
@@ -114,7 +114,7 @@ var songs = [
 	{ 
 		title: "Preach",
 		id: "3h1YSC7jNGnQkfaf7qoEII",
-		weather:"hot"
+		weather:"cozy"
 	}
 ];
 
@@ -129,14 +129,6 @@ var songSrc = "https://open.spotify.com/embed?uri=spotify:track:" + chosenSong.i
  var iframe = $("<iframe>").attr("src", songSrc).attr("width", "380").attr("height", "380")
  				.attr("frameborder", "0").attr("allowtransparency", "true").attr("id", "musicbox");
  $(".spotify-box").append(iframe);
- 
- 
-} else if (chosenSong.weather === weather) {
-var songSrc = "https://open.spotify.com/embed?uri=spotify:track:" + chosenSong.id;
- var iframe = $("<iframe>").attr("src", songSrc).attr("width", "380").attr("height", "380")
- 				.attr("frameborder", "0").attr("allowtransparency", "true").attr("id", "musicbox");
- $(".spotify-box").append(iframe);
-
  } else {
  	chooseSong();
  }

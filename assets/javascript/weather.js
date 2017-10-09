@@ -29,15 +29,27 @@ $("#submit").on("click", function(event) {
                 if (temp > 75 && temp < 120) {
                     $("body").css("background-image", "url('assets/images/sunny.jpg')");
                     hotweatherDiv();
-                    weather = "hot";
+                    
+                    if(temp > 75 && temp < 89){
+                        weather = "warm";
+                    } else if(temp > 89 && temp < 120) {
+                        weather = "hot";
+                    }
                     console.log(weather);
                     chooseSong();
+                    
                 } else if (temp > 30 && temp < 75) {
                     $("body").css("background-image", "url('assets/images/cold.jpg')");
                     coldweatherDiv();
-                    weather = "cold";
+                    
+                    if(temp > 30 && temp < 60) {
+                        weather = "cold";
+                    } else if(temp > 61 && temp < 75) {
+                        weather = "cozy";
+                    }
                     console.log(weather);
                     chooseSong();
+                    
                 }
             };
 
