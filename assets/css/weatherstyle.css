@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 .hot
-{ position: absolute;
+{ position: relative;
     top:25%;
     left:20%;
     background:linear-gradient( to top right, rgba(255,87,34,1) 0%,

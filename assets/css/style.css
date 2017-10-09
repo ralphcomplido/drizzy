@@ -30,8 +30,9 @@
 
 .weather-box{
 	position: relative;
-	bottom: : 40px;
-	left: 150px;
+	clear: left;
+	bottom: 40px;
+	left: 80px;
 	margin-top: 50px;
 	margin-left: 50px;
 	height: 25%;
@@ -40,9 +41,12 @@
 }
 
 .spotify-box {
-	position: relative;
+	margin-left: 180px;
+	margin-top: 50px;
 	right: 50px;
-	top: 57px;
+	bottom: 0px;
+	height: 400px;
+
 }
 
 body{
@@ -82,6 +86,7 @@ h5 {
 
 }
 #footer {
-	position: relative;
+	position: fixed;
 	bottom: 1px;
+	left: 20%;
 }
