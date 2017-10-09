@@ -91,7 +91,7 @@ $("#submit").on("click", function(event) {
                 var iconUrl = "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
                 var weatherIcon = $("<img>").attr("src", iconUrl).attr("width", "auto").attr("height", "150px");
                 var tempValue = response.main.temp + "&#730F"
-                var temp = $("<p>").html("Temperature: " + tempValue);
+                var temp = $("<p>").addClass("temp-font").html(tempValue);
                 $("#city").append(cityName);
                 $("#icon").append(weatherIcon);
                 $("#temp").append(temp);
