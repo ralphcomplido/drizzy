@@ -8,7 +8,7 @@
     rgba(251,140,0 ,1) 100%);
     box-shadow: 1px 1px 30px rgba(255,111,0 ,1);
     width: 400px;
-    height: 400px;
+    height: 380px;
     border-radius: 20px;
     
 
@@ -96,8 +96,8 @@ animation: move 3s infinite linear ;
     position: relative;
     top:25%;
     left:20%;
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
     background:linear-gradient( to top right,rgba(117,117,117 ,1) 0%,
     rgba(33,33,33 ,1) 90%);
     box-shadow: 1px 1px 30px rgba(33,33,33 ,1);
