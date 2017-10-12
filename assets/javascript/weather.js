@@ -31,7 +31,7 @@ var weather = 0;
   }
 };
 
-player.playVideo("spotify-box", "o8nh8OZ4rL0");
+player.playVideo("youtube-box", "o8nh8OZ4rL0");
 $("#submit").on("click", function(e) {
 
     e.preventDefault();
