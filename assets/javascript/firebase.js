@@ -59,5 +59,15 @@
 
     messages.on("child_added", function(snap) {
         wrap.append('<li><span>' + $.sanitize(snap.val().user) + ':</span> ' + $.sanitize(snap.val().message) + '</li>');
-        window.scrollTo(0, document.body.scrollHeight);
+        $('.wrapper').scrollTop($('.wrapper')[0].scrollHeight);
     });
+
+    $("#button").click(function(){
+    if($(this).html() == "_"){
+        $(this).html("+");
+    }
+    else{
+        $(this).html("_");
+    }
+    $("#chatwindow").slideToggle();
+});
