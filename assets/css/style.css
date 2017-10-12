@@ -96,6 +96,21 @@ h5 {
 	background-color: black;
 	border: solid black;
 }
+
+.user {
+    position: relative;
+    left: 450px;
+}
+
+#chatbox {
+    background-color: white;
+    position: relative;
+    left: 600px;
+}
+
+.username, .message {
+    width: 250px;
+}
 /*#footer {
 	position: fixed;
 	bottom: 1px;
