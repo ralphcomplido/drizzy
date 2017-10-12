@@ -106,10 +106,20 @@ h5 {
     background-color: white;
     position: relative;
     left: 600px;
+    bottom: 30px;
 }
 
+.wrapper {
+	position: relative;
+	left: 10px;
+	overflow: scroll;
+	height: 300px;
+    width: 300px;
+}
 .username, .message {
     width: 250px;
+    margin: 5px;
+
 }
 /*#footer {
 	position: fixed;
