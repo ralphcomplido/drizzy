@@ -1,10 +1,42 @@
 // I need Zip Code Input Submit ID
 //#submit and #zip
 var weather = 0;
+// 2. This code loads the IFrame Player API code asynchronously.
+      var player = {
+  playVideo: function(container, videoId) {
+    if (typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined') {
+      window.onYouTubeIframeAPIReady = function() {
+        player.loadPlayer(container, videoId);
+      };
 
-$("#submit").on("click", function(event) {
+      $.getScript('//www.youtube.com/iframe_api');
+    } else {
+      player.loadPlayer(container, videoId);
+    }
+  },
 
-    event.preventDefault();
+  loadPlayer: function(container, videoId) {
+    new YT.Player(container, {
+      videoId: videoId,
+      width: 380,
+      height: 380,
+      playerVars: {
+        autoplay: 1,
+        controls: 0,
+        modestbranding: 1,
+        rel: 0,
+        showInfo: 0
+      }
+    });
+  }
+};
+
+player.playVideo("spotify-box", "o8nh8OZ4rL0");
+$("#submit").on("click", function(e) {
+
+    e.preventDefault();
+       
+
 
     var zip = $("#zip").val().trim();
     console.log(zip)
@@ -53,6 +85,9 @@ $("#submit").on("click", function(event) {
                 }
             };
 
+
+
+   
             function hotweatherDiv() {
                 $(".weather-box").empty();
                 var hotDiv = $("<div>").addClass("hot");
@@ -60,6 +95,7 @@ $("#submit").on("click", function(event) {
                 var sunxSpan = $("<span>").addClass("sunx");
                 var weatherAreaDiv = $("<div>").addClass("weather-area");
                 var appendAll = hotDiv.append(sunSpan, sunxSpan, weatherAreaDiv);
+                $(".weather-box").fadeIn("slow");
                 $(".weather-box").append(appendAll);
                 createWeatherArea();
 
@@ -76,7 +112,10 @@ $("#submit").on("click", function(event) {
                 var stick2Span = $("<span>").addClass("stick2");
                 var weatherAreaDiv = $("<div>").addClass("weather-area");
                 var appendAll = stormyDiv.append(ul, snoweSpan, snowexSpan, stickSpan, stick2Span, weatherAreaDiv);
+                
                 $(".weather-box").append(appendAll);
+                $(".stormy").fadeIn("slow");
+
                 createWeatherArea();
 
             }
