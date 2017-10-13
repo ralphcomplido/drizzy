@@ -101,7 +101,7 @@ h5 {
     position: relative;
     left: 450px;
 }
-.button {
+.minimize-button {
 	color: white;
 	font-weight: bold;
 	font-size: 14px;
@@ -117,7 +117,7 @@ h5 {
     bottom: 5%;
     width: 325px;
 }
-#button {
+#minimize-button {
 	float: right;
 	text-align: right;
     cursor:pointer;
