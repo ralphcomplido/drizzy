@@ -126,7 +126,7 @@ function chooseSong() {
 	$(".spotify-box").empty();
 	if (chosenSong.weather === weather) {
 var songSrc = "https://open.spotify.com/embed?uri=spotify:track:" + chosenSong.id;
- var iframe = $("<iframe>").attr("src", songSrc).attr("width", "380").attr("height", "380")
+ var iframe = $("<iframe>").attr("src", songSrc).attr("width", "280").attr("height", "280")
  				.attr("frameborder", "0").attr("allowtransparency", "true").attr("id", "musicbox");
  $(".spotify-box").append(iframe);
  } else {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>drizzy</title>
 		  <!-- Required meta tags -->
@@ -11,16 +12,15 @@
 	
 	<!--link css and jquery-->
     	<link rel="stylesheet" href="assets/css/reset.css">
-      
-      <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/weatherstyle.css">
+      <link rel="stylesheet" href="assets/css/style.css">
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
   <!--linking firebase-->
       <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
 
   <!--linking google font and styling -->
-      <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
       <script src="https://use.fontawesome.com/4bef1fec21.js"></script>
 
 </head>
@@ -28,46 +28,71 @@
 
 <body>
 
-
+<!--left column-->
+<div id="div_left">
 	<div class="container" id="entire">
       <div id="head">
-            <h1><img height="300" width="430" src="assets/images/draked.png" class="drake">DRIZZY</h1>
+            <h1><img height="300" width="430" src="assets/images/drakebg1.png" class="drake">DRIZZY.</h1>
       </div>
+
   <!--Search box display-->
-    <div class="container-fluid search">
-      <form action="/submit-zip-code">
-        <input type="text" placeholder="enter your zip code" id="zip" required>
-          <button type="submit" class="btn btn-primary" id="submit"><i class="fa fa-map-marker"> </i></button>
-      </form>
-    </div>
+      <div class="container-fluid search">
+        <form action="/submit-zip-code">
+          <input type="text" placeholder="enter your zip code bro" id="zip" required>
+            <button type="submit" class="btn btn-primary" id="submit"><i class="fa fa-map-marker"> </i></button>
+        </form>
+      </div>
+
+  <!--HOTLINE BLING FUNCTION-->
+
+      <div class="outer_container">
+        <div class="container_head">
+            <div class="text">1-800-HOTLINEBLING</div>
+            <div class="text hidden">1-800-HOTLINEBLING</div>
+            <div class="text hidden">1-800-HOTLINEBLING</div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+<!--RIGHT COLUMN-->
+<div id="div_right">
+
     <!--Weather display-->
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="weather-box"> 
-            
+          <div class="weather-box">
+
           </div>
-        </div>  
+    </div>  
     <!--Spotify display-->
-        <div class="col-md-6">
+        <div class="container">
           <div class="spotify-box"> 
             
           </div>
         </div>  
-      </div>  
-      </div>
+      
 </div>
+
+
+  
+
+
+
+
   <!--copyright for drizzy-->
-  <!--<footer>
+  <footer>
         <div id="footer" class="container">
-              <h4 id="copyright">&copy; Copyright 2017 drizzy and friends</h4>
+              <h4 id="copyright">&copy; Copyright 2017 drizzy co.</h4>
         </div>    
-  </footer>-->
-  </div>
+  </footer>
+  
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src="assets/javascript/weather.js"></script>
     <script type="text/javascript" src="assets/javascript/spotify.js"></script>
+    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
     
 </body>   	
 
