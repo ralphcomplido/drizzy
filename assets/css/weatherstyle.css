@@ -2,8 +2,6 @@
 
 .hot
 { position: relative;
-    top:25%;
-    left:20%;
     background:linear-gradient( to top right, rgba(255,87,34,1) 0%,
     rgba(251,140,0 ,1) 100%);
     box-shadow: 1px 1px 15px rgba(255,111,0 ,1);
