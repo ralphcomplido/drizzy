@@ -108,7 +108,9 @@ var songs = {
 
                     },
 
+
                     //create new mthod to play
+
 
                     playNext: function(container,videoId) {
 

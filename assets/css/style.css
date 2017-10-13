@@ -1,3 +1,4 @@
+
 /* drake hotline bling style*/
 
 .text {
@@ -47,12 +48,14 @@
 	
 
 
+
 .drake {
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-right: 5px;
 	padding-left: 5px;
 }
+
 
 h1{
 	margin-left: 55px;
@@ -79,6 +82,7 @@ h1{
 	border: solid black;
 	width: 8%;
 
+
 }
 
 /* div right styling */
@@ -103,6 +107,7 @@ h1{
 	right: 300px;
 	
 
+
 }
 
 body{
@@ -111,8 +116,10 @@ body{
 	
 }
 
+
 footer{
 	clear: both;
+
 }
 
 /* footer text */
@@ -200,10 +207,13 @@ h4 {
     margin: 5px;
     color: black;
 
+
 }
+
 li {
   list-style-type: none;
 }
+
 
 
 
