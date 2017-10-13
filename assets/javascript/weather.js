@@ -29,25 +29,23 @@ $("#submit").on("click", function(e) {
 
             function weatherChecker() {
                 let temp = response.main.temp;
-                if (temp > 75 && temp < 120) {
-                    $("body").css("background-image", "url('assets/images/sunny.jpg')");
+                if (temp > 70 && temp < 120) {
+                    $("body").css("background-image", "url('assets/images/change3.png')");
                     hotweatherDiv();
                     
-                    if(temp > 75 && temp < 89){
+                    if(temp > 70 ){
                         weather = "warm";
-                    } else if(temp > 89 && temp < 120) {
-                        weather = "hot";
                     }
                     console.log(weather);
                     chooseSong();
                     
-                } else if (temp > 30 && temp < 75) {
-                    $("body").css("background-image", "url('assets/images/cold.jpg')");
+                } else if (temp > 30 && temp < 70) {
+                    $("body").css("background-image", "url('assets/images/change4.png')");
                     coldweatherDiv();
                     
                     if(temp > 30 && temp < 60) {
                         weather = "cold";
-                    } else if(temp > 61 && temp < 75) {
+                    } else if(temp > 61 && temp < 70) {
                         weather = "cozy";
                     }
                     console.log(weather);
