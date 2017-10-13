@@ -1,10 +1,13 @@
 // I need Zip Code Input Submit ID
 //#submit and #zip
 var weather = 0;
+// 2. This code loads the IFrame Player API code asynchronously.
 
-$("#submit").on("click", function(event) {
+$("#submit").on("click", function(e) {
 
-    event.preventDefault();
+    e.preventDefault();
+       
+
 
     var zip = $("#zip").val().trim();
     console.log(zip)
@@ -30,10 +33,8 @@ $("#submit").on("click", function(event) {
                     $("body").css("background-image", "url('assets/images/change3.png')");
                     hotweatherDiv();
                     
-                    if(temp > 70 && temp < 89){
+                    if(temp > 70 ){
                         weather = "warm";
-                    } else if(temp > 89 && temp < 120) {
-                        weather = "hot";
                     }
                     console.log(weather);
                     chooseSong();
@@ -53,6 +54,9 @@ $("#submit").on("click", function(event) {
                 }
             };
 
+
+
+   
             function hotweatherDiv() {
                 $(".weather-box").empty();
                 var hotDiv = $("<div>").addClass("hot");
@@ -60,6 +64,7 @@ $("#submit").on("click", function(event) {
                 var sunxSpan = $("<span>").addClass("sunx");
                 var weatherAreaDiv = $("<div>").addClass("weather-area");
                 var appendAll = hotDiv.append(sunSpan, sunxSpan, weatherAreaDiv);
+                $(".weather-box").fadeIn("slow");
                 $(".weather-box").append(appendAll);
                 createWeatherArea();
 
@@ -76,7 +81,10 @@ $("#submit").on("click", function(event) {
                 var stick2Span = $("<span>").addClass("stick2");
                 var weatherAreaDiv = $("<div>").addClass("weather-area");
                 var appendAll = stormyDiv.append(ul, snoweSpan, snowexSpan, stickSpan, stick2Span, weatherAreaDiv);
+                
                 $(".weather-box").append(appendAll);
+                $(".stormy").fadeIn("slow");
+
                 createWeatherArea();
 
             }
@@ -101,12 +109,12 @@ $("#submit").on("click", function(event) {
             function showWeather() {
                 var cityName = response.name;
                 var iconUrl = "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
-                var weatherIcon = $("<img>").attr("src", iconUrl).attr("width", "auto").attr("height", "75px");
+                var weatherIcon = $("<img>").attr("src", iconUrl).attr("width", "auto").attr("height", "150px");
                 var tempValue = response.main.temp + "&#730F"
                 var temp = $("<p>").addClass("temp-font").html(tempValue);
                 $("#city").append(cityName);
                 $("#icon").append(weatherIcon);
-                $("#temp").append(temp);    
+                $("#temp").append(temp);
             }
 
 
