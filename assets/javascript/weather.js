@@ -32,22 +32,14 @@ $("#submit").on("click", function(e) {
                 if (temp > 70 && temp < 120) {
                     $("body").css("background-image", "url('assets/images/change3.png')");
                     hotweatherDiv();
-                    
-                    if(temp > 70 ){
-                        weather = "warm";
-                    }
+                    weather = "warm";
                     console.log(weather);
                     chooseSong();
                     
                 } else if (temp > 30 && temp < 70) {
                     $("body").css("background-image", "url('assets/images/change4.png')");
                     coldweatherDiv();
-                    
-                    if(temp > 30 && temp < 60) {
-                        weather = "cold";
-                    } else if(temp > 61 && temp < 70) {
-                        weather = "cozy";
-                    }
+                    weather = "cold";
                     console.log(weather);
                     chooseSong();
                     
@@ -109,7 +101,7 @@ $("#submit").on("click", function(e) {
             function showWeather() {
                 var cityName = response.name;
                 var iconUrl = "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
-                var weatherIcon = $("<img>").attr("src", iconUrl).attr("width", "auto").attr("height", "150px");
+                var weatherIcon = $("<img>").attr("src", iconUrl).attr("width", "auto").attr("height", "75px");
                 var tempValue = response.main.temp + "&#730F"
                 var temp = $("<p>").addClass("temp-font").html(tempValue);
                 $("#city").append(cityName);

@@ -101,7 +101,7 @@ h1{
 	
 }
 
-.youtube-box {
+#youtube-box {
 	position: fixed;
 	top:10px;
 	right: 300px;
@@ -157,10 +157,11 @@ h4 {
     opacity:1.0;
     background-size: 100%;
     position: absolute;
-    right: 5%;
-    bottom: 5%;
+    right: 1%;
+    bottom: 2%;
     width: 300px;
     color: white;
+    font-family: "Operator Mono SSm A", "Operator Mono SSm B", 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
 }
 #minimize-button {
 	float: right;
@@ -178,7 +179,7 @@ h4 {
 	left: 10px;
 	overflow: scroll;
 	height: 180px;
-    width: 280px;
+    width: 275px;
     color: white;
     font-size: 20px;
     overflow-x:hidden;
