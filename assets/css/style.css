@@ -103,9 +103,8 @@ h1{
 
 #youtube-box {
 	position: fixed;
-	top:10px;
-	right: 300px;
-	
+	top:15px;
+	right: 360px;
 
 
 }
@@ -181,7 +180,7 @@ h4 {
 	height: 180px;
     width: 275px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     overflow-x:hidden;
 }
 .wrapper::-webkit-scrollbar-track

@@ -100,8 +100,8 @@ var songs = {
 
                 newPlayer =  new YT.Player(container, {
                     videoId: videoId,
-                    width: 380,
-                    height: 380,
+                    width: 370,
+                    height: 300,
                     playerVars: {
                         autoplay: 1,
                         controls: 0,
