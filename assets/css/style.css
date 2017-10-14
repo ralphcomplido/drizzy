@@ -113,14 +113,11 @@ h1{
 
 #youtube-box {
 
-	position: absolute;
-	top:15px;
-	right: 350px;
-
 	width: 380px;
 	height: 300px;
 	margin-left: 100px;
-	
+	margin-top: 30px;
+
 
 }
 
