@@ -30,14 +30,14 @@ $("#submit").on("click", function(e) {
             function weatherChecker() {
                 let temp = response.main.temp;
                 if (temp > 70 && temp < 120) {
-                    $("body").css("background-image", "url('assets/images/change3.png')");
+                    $("body").css("background-image", "url('assets/images/change4.png')");
                     hotweatherDiv();
                     weather = "warm";
                     console.log(weather);
                     chooseSong();
                     
                 } else if (temp > 30 && temp < 70) {
-                    $("body").css("background-image", "url('assets/images/change4.png')");
+                    $("body").css("background-image", "url('assets/images/change3.png')");
                     coldweatherDiv();
                     weather = "cold";
                     console.log(weather);
